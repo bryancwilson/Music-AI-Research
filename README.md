@@ -3,23 +3,18 @@
 This github repository serves as my portfolio of my independent undergraduate research from May 2021 to August 2022. I want to give a huge thank you to the 
 to the professors and graduate students at NC State University for their mentorship and guidance. I have listed them below... 
 
-Summer 2021
+#### May 2021 - August 2021
+- **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
 
-  Dr. John-Paul Ore (Professor in the Dept. of Computer Science at NC State University)
+#### May 2021 - Present
+- **Dr. Thomas Price** (Professor in the Dept. of Computer Science at NC State University)
+- **Jimmy Skripchuck** (Computer Science PhD Student at NC State University)
 
-Summer 2022
-
-  Dr. Thomas Price (Professor in the Dept. of Computer Science at NC State University)
-  
-  Jimmy Skripchuck (Computer Science PhD Student at NC State University)
-
-During both Summer 2021 and Summer 2022, I conducted research through the Women and Minority Summer Research headed by Dr. Javon Adams (Interim Director of the 
+Also, during both Summer 2021 and Summer 2022, I conducted research through the Women and Minority Summer Research headed by Dr. Javon Adams (Interim Director of the 
 College of Engineering Women and Minority Engineering Programs at NC State University).
 
-Summer 2021
-
-Abstract
-
+## Summer 2021
+### Abstract
 The creation of original music through Artificial Intelligence is not a novel idea. In fact, conceptions of musical automata and automatic music machines are centuries old. 
 Due to the seemingly infeasible task of generalizing and quantifying musical structure (harmonic, melodic, and rhythmic structure), researchers have trained their AI algorithms on a dataset
 of sheet music using generative supervised Learning. Because the purpose of generative supervised learning is to synthesize new creations based on any given dataset, this approach 
@@ -29,4 +24,15 @@ reward structure based on the entirety of music, the researcher constructed a re
 reward structure will be used to train the reinforcement learning model. It is expected that by taking this approach, the reinforcement learning model will synthesize music at 
 a higher level of originality then that of generative supervised learning models. 
 
-The reinforcement learning architectures I chose to use for this research problem was Q - Learning. 
+### Methodology
+This works utilizes e-greedy temporal difference off policy Q Learning Algorithm. The Environment consists of a pre written bass 
+and melody line with a starting chord for reference. The algorithm 
+has an action space of 72 chords and can only choose one chord per 
+beat. Each episode only consists of 6 beats. Because generalizing 
+all of music theory into a reward structure is unfeasible, I based my 
+reward model on jazz harmonic theory.
+
+### Results
+### Poster
+![Slide1](https://user-images.githubusercontent.com/84595669/187097304-0efd3ff1-eab1-403a-8a7c-46b58623d2d0.PNG)
+### Citations
