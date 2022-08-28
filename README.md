@@ -23,3 +23,5 @@ choose from by instead training a reinforcement learning model through a musical
 reward structure based on the entirety of music, the researcher constructed a reward structure quantified on a much smaller musical structure based entirely on diatonic jazz harmony. This 
 reward structure will be used to train the reinforcement learning model. It is expected that by taking this approach, the reinforcement learning model will synthesize music at 
 a higher level of originality then that of generative supervised learning models. 
+
+The reinforcement learning architectures I chose to use for this research problem was Q - Learning. 
