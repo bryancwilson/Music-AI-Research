@@ -1,7 +1,6 @@
 # Music-AI-Research
  
-This github repository serves as my portfolio of my independent undergraduate research from May 2021 to August 2022. I want to give a huge thank you to the 
-to the professors and graduate students at NC State University for their mentorship and guidance. I have listed them below... 
+This github repository serves as a portfolio of my independent undergraduate research from May 2021 to August 2022 conducted at Nc State University. I first want to give a huge thank you to the professors and graduate students at NC State University for their mentorship, guidance, and support. I have listed their names below... 
 
 #### May 2021 - August 2021
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
@@ -12,6 +11,8 @@ to the professors and graduate students at NC State University for their mentors
 
 Also, during both Summer 2021 and Summer 2022, I conducted research through the **Women and Minority Summer Research Program** headed by **Dr. Javon Adams** (Interim Director of the 
 College of Engineering Women and Minority Engineering Programs at NC State University).
+
+### Preface
 
 ## Summer 2021
 ### Abstract
@@ -50,12 +51,17 @@ on a much more abstract musical framework - harmonic consonance and dissonance. 
 through this abstract musical framework, I can train a transformer model to produce new compositions with greater originality and complexity.
 
 ### Methodology
-
+#### Dissonance Graph for 2 Voice Chords
 ![Dissonance_Curve_Interval](https://user-images.githubusercontent.com/84595669/187098097-bf4dcc70-a830-4147-a027-1005b2d6b52d.png)
 
+
+#### Dissonance Graph for 3 Voice Chords
 ![Dissonance_Curve_Chords](https://user-images.githubusercontent.com/84595669/187098092-c7da87aa-83d7-439c-b5de-b7488e55f1df.png)
 
+
+#### Dissonance Graph for 4 Voice Chords
 ![Dissonane_Curve_Seventh](https://user-images.githubusercontent.com/84595669/187098102-44edea67-53cb-46c0-8fac-970622367f31.png)
+
 
 ### Results
 Currently in Progress
