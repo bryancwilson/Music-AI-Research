@@ -10,7 +10,7 @@ to the professors and graduate students at NC State University for their mentors
 - **Dr. Thomas Price** (Professor in the Dept. of Computer Science at NC State University)
 - **Jimmy Skripchuck** (Computer Science PhD Student at NC State University)
 
-Also, during both Summer 2021 and Summer 2022, I conducted research through the Women and Minority Summer Research headed by Dr. Javon Adams (Interim Director of the 
+Also, during both Summer 2021 and Summer 2022, I conducted research through the **Women and Minority Summer Research Program** headed by **Dr. Javon Adams** (Interim Director of the 
 College of Engineering Women and Minority Engineering Programs at NC State University).
 
 ## Summer 2021
@@ -25,14 +25,45 @@ reward structure will be used to train the reinforcement learning model. It is e
 a higher level of originality then that of generative supervised learning models. 
 
 ### Methodology
-This works utilizes e-greedy temporal difference off policy Q Learning Algorithm. The Environment consists of a pre written bass 
-and melody line with a starting chord for reference. The algorithm 
-has an action space of 72 chords and can only choose one chord per 
-beat. Each episode only consists of 6 beats. Because generalizing 
-all of music theory into a reward structure is unfeasible, I based my 
+This works utilizes an e-greedy temporal difference off policy Q Learning Algorithm. The Environment consists of a pre written bass 
+and melody line with a starting chord for reference. The algorithm has an action space of 72 chords and can only choose one chord per 
+beat. Each episode only consists of 6 beats. Because generalizing all of music theory into a reward structure is unfeasible, I based my 
 reward model on jazz harmonic theory.
 
 ### Results
+### Conclusions
 ### Poster
 ![Slide1](https://user-images.githubusercontent.com/84595669/187097304-0efd3ff1-eab1-403a-8a7c-46b58623d2d0.PNG)
+
+### Citations
+
+## Summer 2021
+### Abstract
+When approaching the AI problem of generating music compositions, it has become common practice 
+to train a supervised learning model on a large corpus of already existing music, usually all within a 
+similar music style. Not only does this make the generation of complex music composition much more 
+feasible, but it also results in very stable neural models. However, this approach limits the originality and 
+complexity of produced compositions. This is largely because supervised learning models analyze the 
+training data superficially; learning musical patterns and note structures before generating its own. This 
+study seeks to heighten the complexity and originality of AI generated music by training a generative machine learning model 
+on a much more abstract musical framework - harmonic consonance and dissonance. By creating a new chord vocabulary
+through this abstract musical framework, I can train a transformer model to produce new compositions with greater originality and complexity.
+
+### Methodology
+
+![Dissonance_Curve_Interval](https://user-images.githubusercontent.com/84595669/187098097-bf4dcc70-a830-4147-a027-1005b2d6b52d.png)
+
+![Dissonance_Curve_Chords](https://user-images.githubusercontent.com/84595669/187098092-c7da87aa-83d7-439c-b5de-b7488e55f1df.png)
+
+![Dissonane_Curve_Seventh](https://user-images.githubusercontent.com/84595669/187098102-44edea67-53cb-46c0-8fac-970622367f31.png)
+
+### Results
+Currently in Progress
+
+### Conclusions
+Currently in Progress
+
+### Poster
+![Machine Learning Composing Music Utilizing Frequency Theory pptx](https://user-images.githubusercontent.com/84595669/187098383-ebdfc6a3-73e7-4f1c-9d07-ac7b98ba280c.png)
+
 ### Citations
