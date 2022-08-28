@@ -4,17 +4,22 @@ This github repository serves as my portfolio of my independent undergraduate re
 to the professors and graduate students at NC State University for their mentorship and guidance. I have listed them below... 
 
 Summer 2021
+
   Dr. John-Paul Ore (Professor in the Dept. of Computer Science at NC State University)
 
 Summer 2022
+
   Dr. Thomas Price (Professor in the Dept. of Computer Science at NC State University)
+  
   Jimmy Skripchuck (Computer Science PhD Student at NC State University)
 
 During both Summer 2021 and Summer 2022, I conducted research through the Women and Minority Summer Research headed by Dr. Javon Adams (Interim Director of the 
 College of Engineering Women and Minority Engineering Programs at NC State University).
 
 Summer 2021
+
 Abstract
+
 The creation of original music through Artificial Intelligence is not a novel idea. In fact, conceptions of musical automata and automatic music machines are centuries old. 
 Due to the seemingly infeasible task of generalizing and quantifying musical structure (harmonic, melodic, and rhythmic structure), researchers have trained their AI algorithms on a dataset
 of sheet music using generative supervised Learning. Because the purpose of generative supervised learning is to synthesize new creations based on any given dataset, this approach 
