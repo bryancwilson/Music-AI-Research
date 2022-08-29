@@ -32,7 +32,11 @@ beat. Each episode only consists of 6 beats. Because generalizing all of music t
 reward model on jazz harmonic theory.
 
 ### Results
+![Figure_1](https://user-images.githubusercontent.com/84595669/187099460-7961f601-67f0-49a4-ad72-58478871a967.png)
+
 ### Conclusions
+
+
 ### Poster
 ![Slide1](https://user-images.githubusercontent.com/84595669/187097304-0efd3ff1-eab1-403a-8a7c-46b58623d2d0.PNG)
 
@@ -59,9 +63,14 @@ through this abstract musical framework, I can train a transformer model to prod
 ![Dissonance_Curve_Chords](https://user-images.githubusercontent.com/84595669/187098092-c7da87aa-83d7-439c-b5de-b7488e55f1df.png)
 
 
-#### Dissonance Graph for 4 Voice Chords
-![Dissonane_Curve_Seventh](https://user-images.githubusercontent.com/84595669/187098102-44edea67-53cb-46c0-8fac-970622367f31.png)
+#### Dissonance Curve for Bach Chorale
 
+#### Chord Embeddings
+<div>
+  <img align="center" width="300" height="300" src=https://user-images.githubusercontent.com/84595669/187100220-60614367-eb12-43d9-b17b-b1e04217d346.png>
+
+   <img align="center" width="300" height="300" src=https://user-images.githubusercontent.com/84595669/187100223-c4c647cf-56c9-4187-9c43-bc13232d21e5.png>
+ </div>
 
 ### Results
 Currently in Progress
@@ -73,3 +82,4 @@ Currently in Progress
 ![Machine Learning Composing Music Utilizing Frequency Theory pptx](https://user-images.githubusercontent.com/84595669/187098383-ebdfc6a3-73e7-4f1c-9d07-ac7b98ba280c.png)
 
 ### Citations
+
