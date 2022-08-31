@@ -14,7 +14,7 @@ College of Engineering Women and Minority Engineering Programs at NC State Unive
 
 ### Preface
 Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
--- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection (by a composer, songwriter, filmscorer, etfc) of the human experience. It is both the spontaneity and predictibility throughout a piece of music that serves as a manifestation of life. This cannot be mimicked but rather must be learned. 
+-- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection (by a composer, songwriter, filmscorer, etc.) of the human experience. It is both the spontaneity and predictibility throughout a piece of music that serves as a manifestation of a person's life. This cannot be mimicked but rather must be learned. 
 
 With the recent 21st century surge advancements in technology, Machine Learning has become a widely researched and implemented tool in businesses and universities. Naturally within the ongoing conversation on machine learning, art has come up. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings we have not broken through such as originality and complexity as well as a large mistrust from the musician population. 
 
