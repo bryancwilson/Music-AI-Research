@@ -14,12 +14,11 @@ College of Engineering Women and Minority Engineering Programs at NC State Unive
 
 ### Preface
 Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
--- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection (by a composer, songwriter, filmscorer, etc.) of the human experience. It is both the spontaneity and predictibility throughout a piece of music that serves as a manifestation of a person's life. This cannot be mimicked but rather must be learned. 
+-- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictibility throughout a piece of music that serves as a manifestation of a person's life. This cannot be mimicked but rather must be learned. 
 
-With the recent 21st century surge advancements in technology, Machine Learning has become a widely researched and implemented tool in businesses and universities. Naturally within the ongoing conversation on machine learning, art has come up. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings we have not broken through such as originality and complexity as well as a large mistrust from the musician population. 
+With the recent 21st century surge technological advancements, Machine Learning has become a widely researched and implemented tool in businesses and universities. Naturally within the ongoing conversation regarding the capacity of machine learning, the task of creating art has arisen. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings such as originality and complexity we have not broken through as well as a large mistrust of AI composers from the musician population. 
 
 If quantifying the complexity of human emotions and emulating that in music is unfeasible for a computer, can we instead use machine learning and mathematical concepts to instead model the human composition process which is driven by the human experience. If not, will even a partial or incomplete model lead to much more original and complex sounding music. This ultimately is what I looked to explore in this research project.
-
 
 ## Summer 2021
 ### Abstract
@@ -37,6 +36,11 @@ This works utilizes an e-greedy temporal difference off policy Q Learning Algori
 and melody line with a starting chord for reference. The algorithm has an action space of 72 chords and can only choose one chord per 
 beat. Each episode only consists of 6 beats. Because generalizing all of music theory into a reward structure is unfeasible, I based my 
 reward model on jazz harmonic theory.
+
+
+```
+print("Hello World")
+```
 
 ### Results
 ![Figure_1](https://user-images.githubusercontent.com/84595669/187099460-7961f601-67f0-49a4-ad72-58478871a967.png)
