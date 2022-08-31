@@ -13,6 +13,13 @@ Also, during both Summer 2021 and Summer 2022, I conducted research through the 
 College of Engineering Women and Minority Engineering Programs at NC State University).
 
 ### Preface
+Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
+-- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection (by a composer, songwriter, filmscorer, etfc) of the human experience. It is both the spontaneity and predictibility throughout a piece of music that serves as a manifestation of life. This cannot be mimicked but rather must be learned. 
+
+With the recent 21st century surge advancements in technology, Machine Learning has become a widely researched and implemented tool in businesses and universities. Naturally within the ongoing conversation on machine learning, art has come up. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings we have not broken through such as originality and complexity as well as a large mistrust from the musician population. 
+
+If quantifying the complexity of human emotions and emulating that in music is unfeasible for a computer, can we instead use machine learning and mathematical concepts to instead model the human composition process which is driven by the human experience. If not, will even a partial or incomplete model lead to much more original and complex sounding music. This ultimately is what I looked to explore in this research project.
+
 
 ## Summer 2021
 ### Abstract
@@ -52,18 +59,10 @@ complexity of produced compositions. This is largely because supervised learning
 training data superficially; learning musical patterns and note structures before generating its own. This 
 study seeks to heighten the complexity and originality of AI generated music by training a generative machine learning model 
 on a much more abstract musical framework - harmonic consonance and dissonance. By creating a new chord vocabulary
-through this abstract musical framework, I can train a transformer model to produce new compositions with greater originality and complexity.
+through this abstract musical framework, I will train a transformer model to produce new compositions with greater originality and complexity.
 
 ### Methodology
-#### Dissonance Graph for 2 Voice Chords
-![Dissonance_Curve_Interval](https://user-images.githubusercontent.com/84595669/187098097-bf4dcc70-a830-4147-a027-1005b2d6b52d.png)
-
-
-#### Dissonance Graph for 3 Voice Chords
-![Dissonance_Curve_Chords](https://user-images.githubusercontent.com/84595669/187098092-c7da87aa-83d7-439c-b5de-b7488e55f1df.png)
-
-
-#### Dissonance Curve for Bach Chorale
+#### Dissonance Graph for 2, 3, and 4 Voices
 
 #### Chord Embeddings
 <div>
