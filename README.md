@@ -14,7 +14,7 @@ College of Engineering Women and Minority Engineering Programs at NC State Unive
 
 ### Preface
 Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
--- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictibility throughout a piece of music that serves as a manifestation of a person's life. This cannot be mimicked but rather must be learned. 
+-- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictibility throughout a piece of music that embodies a person's life. Futhermore it is the experiences of a person's life which informs the composer throughout the composition of a piece of music.  therefore cannot be mimicked but rather must be learned. 
 
 With the recent 21st century surge technological advancements, Machine Learning has become a widely researched and implemented tool in businesses and universities. Naturally within the ongoing conversation regarding the capacity of machine learning, the task of creating art has arisen. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings such as originality and complexity we have not broken through as well as a large mistrust of AI composers from the musician population. 
 
@@ -32,6 +32,8 @@ reward structure will be used to train the reinforcement learning model. It is e
 a higher level of originality then that of generative supervised learning models. 
 
 ### Methodology
+It is common for path planning problems that utilize Machine Learning employ Reinforcement Learning techniques. 
+
 This works utilizes an e-greedy temporal difference off policy Q Learning Algorithm. The Environment consists of a pre written bass 
 and melody line with a starting chord for reference. The algorithm has an action space of 72 chords and can only choose one chord per 
 beat. Each episode only consists of 6 beats. Because generalizing all of music theory into a reward structure is unfeasible, I based my 
@@ -46,7 +48,7 @@ print("Hello World")
 ![Figure_1](https://user-images.githubusercontent.com/84595669/187099460-7961f601-67f0-49a4-ad72-58478871a967.png)
 
 ### Conclusions
-
+Unless the algorithm ran for an extremely long time, and the policy gradient descent randomly started at the right initiation, the algorithm wold never find the the optimal policy and would always produce a music composition with errors. E-greedy policy improvement is insufficient to train AI intelligence algorithms to produce original music. 
 
 ### Poster
 ![Slide1](https://user-images.githubusercontent.com/84595669/187097304-0efd3ff1-eab1-403a-8a7c-46b58623d2d0.PNG)
