@@ -1,6 +1,6 @@
 # Music-AI-Research
  
-This github repository serves as a portfolio of my independent undergraduate research conducted from May 2021 to August 2022 at NC State University. I first want to give a huge thank you to the professors and graduate students at NC State University for their mentorship, guidance, and support. I have listed their names below... 
+This github repository serves as a portfolio of my independent undergraduate research conducted from May 2021 to August 2022 at NC State University. I first want to give a huge thanks to the professors and graduate students at NC State University for their mentorship, guidance, and support. I have listed their names below... 
 
 #### May 2021 - August 2021
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
