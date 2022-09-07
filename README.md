@@ -1,6 +1,6 @@
 # Music-AI-Research
  
-This github repository serves as a portfolio of my independent undergraduate research from May 2021 to August 2022 conducted at Nc State University. I first want to give a huge thank you to the professors and graduate students at NC State University for their mentorship, guidance, and support. I have listed their names below... 
+This github repository serves as a portfolio of my independent undergraduate research from May 2021 to August 2022 conducted at NC State University. I first want to give a huge thank you to the professors and graduate students at NC State University for their mentorship, guidance, and support. I have listed their names below... 
 
 #### May 2021 - August 2021
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
@@ -53,7 +53,7 @@ print("Hello World")
 
 ### Citations
 
-## Summer 2021
+## Summer 2022
 ### Abstract
 When approaching the AI problem of generating music compositions, it has become common practice 
 to train a supervised learning model on a large corpus of already existing music, usually all within a 
@@ -66,7 +66,9 @@ on a much more abstract musical framework - harmonic consonance and dissonance. 
 through this abstract musical framework, I will train a transformer model to produce new compositions with greater originality and complexity.
 
 ### Methodology
-#### Dissonance Graph for 2, 3, and 4 Voices
+#### Dissonance Curve
+![DIssonance Curve Flow Chart](https://user-images.githubusercontent.com/84595669/188961931-74bf63b5-cda7-4e01-a1f6-6694bab8d15a.png)
+
 
 #### Chord Embeddings
 <div>
