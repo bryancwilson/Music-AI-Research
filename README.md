@@ -58,7 +58,54 @@ class MusicComposition:
 ```
 
 #### Q-Learning
-I utilized an e-greedy temporal difference off policy Q-Learning Algorithm. 
+FOr the Q-Learning implementation, I utilized an E-Greedy Temporal Difference Off Policy Q-Learning Algorithm. To break this title up, e-greedy stands for epsilon-greedy and is essentially an approach at handling the exploration/exploitation problem in Machine Learning. In the beggining of the iterative learning process, a value called epsilon is set to a constant C where 0 < C < 1. For every episode (a sequence of states until completion of the task) epsilon is decreased until the last few episodes are reached where it reaches its lowest value. During every episode a random number N where 0 < N < 1 is generated and compared to the current value of C. If N > C, a random action from the action space is chosen (exploration). If N < C then to action with the current highest Q-Value is chosen (exploitation). As learning continues, the best actions will be chosen more often because C is decreasing. 
+
+```
+    ALPHA = 0.9 #This is the learning rate
+    GAMMA = 0.99 #This is the discount factor
+    EPS = .4 #e - greedy value (perecent probability it will pick the optimal state-action pair)
+
+    Q = {}
+    for state in env.stateSpacePlus:
+        for action in env.actionSpaceNum:
+            Q[state, action] = 0 #table of state and action pairs for our Q Learning
+
+    numComp = 1500 #The number of episodes and time that the while loop below will be entered
+    totalRewards = np.zeros(numComp) 
+    for i in range(numComp): #constantly iterate through all desired episodes
+        if i % 100 == 0:
+            print('Starting Composition ', i) #This will print every every 100 episodes
+    
+        done = False
+        epRewards = 0
+        observation = env.reset()
+
+        n = 0 #initialize n
+        Z = [] #initialize z dictionary of selected actions
+
+        while not done: #This loop will not stop until the episode is done which is determined by the isTerminal function in the environment
+            n = n + 1
+            rand = np.random.random() #This returns a random number between 0 and 1 
+            action = maxAction(Q,observation, env.actionSpaceNum) if rand < (1-EPS) \
+                                else env.actionSpaceSample() #This is an e-greedy policy that selects all the best actions once a threshold is reached decided by epsilon. This is a way of balancing between exploration and exploitation. The more random actions (exploration) the more it COULD potentially learn better approaches.
+            
+            Z.append(env.actionSpaceDic[action]) #This will append every index to a list for later use
+            
+            observation_, reward, done, info = env.step(n, env.actionSpaceDic[action]) #observation in this code is the same as state
+            epRewards += reward
+   
+            action_ = maxAction(Q, observation_, env.actionSpaceNum) #Finds the next best action in the future state in order to calculate below a more precise estimation for the current state, action pair
+
+            Q[observation,action] = Q[observation,action] + ALPHA*(reward + \
+                        GAMMA*Q[observation_,action_] - Q[observation,action]) #This function is the root of Q-Learning, This is the constant update of Q to find the most precise value for the state action pair given the state action pair after that
+            observation = observation_
+            
+        if EPS - 2 / numComp > 0:
+            EPS -= 2 / numComp
+        else:
+            EPS = 0
+        totalRewards[i] = epRewards
+```
 
 #### Reward Function
 It would've been infeasible to create an effective reward function based on general musci theory due to its intractible breadth. Therfore I chose to construct a reward function solely on jazz harmonic theory. 
