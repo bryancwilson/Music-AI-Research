@@ -35,7 +35,27 @@ a higher level of originality then that of generative supervised learning models
 It is common for path planning problems that utilize Machine Learning to employ Reinforcement Learning techniques. For step wise music composition, I decided to this approach would be most suitable as stepwise composition following a strict criteria can be viewed as analogous to finding the optimal path. For this project I designed my own environment and reward function in addition to employing a Q-Learning Model. Below, I go into more detail in addition to including code snippets and visualizations regarding my methodology.
 
 #### Environment
-One of the necessary components for a reinforcement learning model is an environment. An environment is a model of the conditions for which the agents must learn through taking actions given a certain state. For this project I choose a grand staff (treble and bass cleff
+One of the necessary components for a reinforcement learning model is an environment. An environment is a model of the conditions for which the agents must learn through taking actions given a certain state. For this project I choose a grand staff (treble and bass cleff) in 4/4 time signature and the key of C major for simplicity and readability. I also only included 7 beats for the entire piece having the last beat contain a quarter rest. This was to ensure that the permutations of chords would not explode and become intractible. The first chord was given while all subsequent beats only consisted of a melody and bass note. This results in a total of 6 states as the agent starts on the 2nd beat and ends on the 7th beat.  
+
+```
+# RL Environment
+class MusicComposition:
+    def __init__(self, tonality, timesig, n1, n2, n3, n4, n5, n6, n7): 
+        self.PieceInit(tonality, timesig, n1, n2, n3, n4, n5, n6, n7)
+        self.stateSpace = [i for i in range(6)] 
+        self.stateSpace.remove(5)
+        self.stateSpacePlus = [i for i in range(6)]
+        self.actionSpaceIndex = {'A3': 1, 'B3': 2, 'C4': 3, 'D4': 4, 'E4': 5, 'F4': 6, 'G4': 7, 'A4': 8, 'B4': 9, 'C5': 10, 'D5': 11, 'E5': 12, 'F5': 13, 'G5': 14, 'A5': 15}
+        self.actionSpaceIndexRev = {1: 'A3', 2: 'B3', 3: 'C4', 4: 'D4', 5: 'E4', 6: 'F4', 7: 'G4', 8: 'A4', 9: 'B4', 10: 'C5', 11: 'D5', 12: 'E5', 13: 'F5', 14: 'G5', 15: 'A5'}
+        self.actionRangeNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+        self.noteRange = ['A3', 'B3', 'C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4', 'C5', 'D5', 'E5', 'F5', 'G5', 'A5']
+        self.possibleActions = self.makeActionSpace(self.actionRangeNum, self.actionRangeNum, self.actionRangeNum)
+        self.actionSpaceNum = [i for i in range(len(self.possibleActions))]
+        self.actionSpaceDic = self.makeActionSpaceDict(self.possibleActions, self.actionSpaceNum)
+        self.agentPosition = chord.Chord('C4 G4 E5')
+        self.initPosition = chord.Chord('C4 G4 E5')
+        self.currentState = 0
+```
 
 #### Q-Learning
 I utilized an e-greedy temporal difference off policy Q-Learning Algorithm. 
