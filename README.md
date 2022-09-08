@@ -14,9 +14,9 @@ College of Engineering Women and Minority Engineering Programs at NC State Unive
 
 ### Preface
 Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
--- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictibility throughout a piece of music that embodies a person's life. Futhermore it is the experiences of a person's life which informs the composer throughout the composition of a piece of music.  therefore cannot be mimicked but rather must be learned. 
+-- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictibility throughout a piece of music that embodies a person's life. Futhermore it is the experiences of a person's life which informs the music composition process. Music therefore cannot be mimicked but rather must be learned. 
 
-With the recent 21st century surge technological advancements, Machine Learning has become a widely researched and implemented tool in businesses and universities. Naturally within the ongoing conversation regarding the capacity of machine learning, the task of creating art has arisen. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings such as originality and complexity we have not broken through as well as a large mistrust of AI composers from the musician population. 
+With the recent 21st century surge in technological advancements, Machine Learning has become a widely researched and implemented tool in organization globally. Naturally within the ongoing conversation regarding the capacity of machine learning, the task of creating art has arisen. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings such as originality and complexity we have not broken through as well as a large mistrust of AI composers from the musician population. 
 
 If quantifying the complexity of human emotions and emulating that in music is unfeasible for a computer, can we instead use machine learning and mathematical concepts to instead model the human composition process which is driven by the human experience. If not, will even a partial or incomplete model lead to much more original and complex sounding music. This ultimately is what I looked to explore in this research project.
 
@@ -32,7 +32,16 @@ reward structure will be used to train the reinforcement learning model. It is e
 a higher level of originality then that of generative supervised learning models. 
 
 ### Methodology
-It is common for path planning problems that utilize Machine Learning employ Reinforcement Learning techniques. 
+It is common for path planning problems that utilize Machine Learning employ Reinforcement Learning techniques. For step wise music composition, I decided to approach this as a path planning problem.
+
+#### Environment
+One of the necessary components for a reinforcement learning model is an environment. An environment is a model of the conditions for which the agents must learn through taking actions given a certain state. For this project I choose a grand staff (treble and bass cleff
+
+#### Q-Learning
+I utilized an e-greedy temporal difference off policy Q-Learning Algorithm. 
+
+#### Reward Function
+It would've been infeasible to create an effective reward function based on general musci theory due to its intractible breadth. Therfore I chose to construct a reward function solely on jazz harmonic theory. 
 
 This works utilizes an e-greedy temporal difference off policy Q Learning Algorithm. The Environment consists of a pre written bass 
 and melody line with a starting chord for reference. The algorithm has an action space of 72 chords and can only choose one chord per 
@@ -72,12 +81,10 @@ through this abstract musical framework, I will train a transformer model to pro
 ![DIssonance Curve Flow Chart](https://user-images.githubusercontent.com/84595669/188961931-74bf63b5-cda7-4e01-a1f6-6694bab8d15a.png)
 
 
-#### Chord Embeddings
-<div>
-  <img align="center" width="300" height="300" src=https://user-images.githubusercontent.com/84595669/187100220-60614367-eb12-43d9-b17b-b1e04217d346.png>
 
-   <img align="center" width="300" height="300" src=https://user-images.githubusercontent.com/84595669/187100223-c4c647cf-56c9-4187-9c43-bc13232d21e5.png>
- </div>
+
+#### Chord Embeddings
+
 
 ### Results
 Currently in Progress
