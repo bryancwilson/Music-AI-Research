@@ -32,7 +32,7 @@ reward structure will be used to train the reinforcement learning model. It is e
 a higher level of originality then that of generative supervised learning models. 
 
 ### Methodology
-It is common for path planning problems that utilize Machine Learning employ Reinforcement Learning techniques. For step wise music composition, I decided to approach this as a path planning problem.
+It is common for path planning problems that utilize Machine Learning to employ Reinforcement Learning techniques. For step wise music composition, I decided to this approach would be most suitable as stepwise composition following a strict criteria can be viewed as analogous to finding the optimal path. For this project I designed my own environment and reward function in addition to employing a Q-Learning Model. Below, I go into more detail in addition to including code snippets and visualizations regarding my methodology.
 
 #### Environment
 One of the necessary components for a reinforcement learning model is an environment. An environment is a model of the conditions for which the agents must learn through taking actions given a certain state. For this project I choose a grand staff (treble and bass cleff
