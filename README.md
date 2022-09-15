@@ -14,7 +14,7 @@ College of Engineering Women and Minority Engineering Programs at NC State Unive
 
 ### Preface
 Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
--- computer generated art through machine learning. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictibility throughout a piece of music that embodies a person's life. Futhermore it is the experiences of a person's life which informs the music composition process. Music therefore cannot be mimicked but rather must be learned. 
+-- **computer generated art through machine learning**. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictibility throughout a piece of music that embodies a person's life. Futhermore it is the experiences of a person's life which informs the music composition process. Music composition therefore cannot be mimicked but rather must be learned. 
 
 With the recent 21st century surge in technological advancements, Machine Learning has become a widely researched and implemented tool in organization globally. Naturally within the ongoing conversation regarding the capacity of machine learning, the task of creating art has arisen. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings such as originality and complexity we have not broken through as well as a large mistrust of AI composers from the musician population. 
 
@@ -110,11 +110,6 @@ FOr the Q-Learning implementation, I utilized an E-Greedy Temporal Difference Of
 #### Reward Function
 It would've been infeasible to create an effective reward function based on general musci theory due to its intractible breadth. Therfore I chose to construct a reward function solely on jazz harmonic theory. 
 
-This works utilizes an e-greedy temporal difference off policy Q Learning Algorithm. The Environment consists of a pre written bass 
-and melody line with a starting chord for reference. The algorithm has an action space of 72 chords and can only choose one chord per 
-beat. Each episode only consists of 6 beats. Because generalizing all of music theory into a reward structure is unfeasible, I based my 
-reward model on jazz harmonic theory.
-
 ### Results
 ![Figure_1](https://user-images.githubusercontent.com/84595669/187099460-7961f601-67f0-49a4-ad72-58478871a967.png)
 
@@ -139,20 +134,24 @@ on a much more abstract musical framework - harmonic consonance and dissonance. 
 through this abstract musical framework, I will train a transformer model to produce new compositions with greater originality and complexity.
 
 ### Methodology
+Music composition is a widely studied field of music. When a music composer first sits down to write a piece of music, it is commonly practice to first consider the emotions you are trying to evoke from the listener. Ultimately it is the response to this question that will ultimately guide the composer throughout the entire music composition process as every decision made will enforce this. Understanding that this question is not considered but rather bypassed completely by a machine learning music composer begs the question, "How can emotion in music be quantified". For composers, one of the biggest ways of influencing the listener's emotions is by utilizing harmonic tension and resolution. 
+
+#### Psychoacoustic Dissonance
+
 #### Dissonance Curve
 ![DIssonance Curve Flow Chart](https://user-images.githubusercontent.com/84595669/188961931-74bf63b5-cda7-4e01-a1f6-6694bab8d15a.png)
 
+#### Embedding
 
+
+#### Transformer and Music Generation
 
 
 #### Chord Embeddings
 
 
 ### Results
-Currently in Progress
-
-### Conclusions
-Currently in Progress
+Currently in Progress...
 
 ### Poster
 ![Machine Learning Composing Music Utilizing Frequency Theory pptx](https://user-images.githubusercontent.com/84595669/187098383-ebdfc6a3-73e7-4f1c-9d07-ac7b98ba280c.png)
