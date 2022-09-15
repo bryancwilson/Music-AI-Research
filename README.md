@@ -115,11 +115,6 @@ and melody line with a starting chord for reference. The algorithm has an action
 beat. Each episode only consists of 6 beats. Because generalizing all of music theory into a reward structure is unfeasible, I based my 
 reward model on jazz harmonic theory.
 
-
-```
-print("Hello World")
-```
-
 ### Results
 ![Figure_1](https://user-images.githubusercontent.com/84595669/187099460-7961f601-67f0-49a4-ad72-58478871a967.png)
 
