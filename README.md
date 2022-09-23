@@ -1,6 +1,6 @@
 # Music-AI-Research
  
-This github repository serves as a portfolio of my independent undergraduate research conducted from May 2021 to August 2022 at NC State University. Coding files will be uploaded pending research paper publications. I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below... 
+This github repository serves as a portfolio of my independent undergraduate research conducted from May 2021 to August 2022 at NC State University. **Coding files will be uploaded pending research paper publications.** I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below... 
 
 #### May 2021 - August 2021
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
@@ -137,6 +137,48 @@ through this abstract musical framework, I will train a transformer model to pro
 Music composition is a widely studied field of music. When a music composer first sits down to write a piece of music, it is commonly practice to first consider the emotions you are trying to evoke from the listener. Ultimately, it is the response to this question that will ultimately guide the composer throughout the entire music composition process as every decision made will enforce this. Understanding that this question is not considered but rather bypassed completely by a machine learning model begs the question, "How can emotion in music be quantified?". For composers, one of the biggest ways of influencing the listener's emotions is by utilizing harmonic tension and resolution. Moreover, there are objective measures of harmonic tension as developed by researchers that prove accurate. Given a function that passes any chord (or chords) adn returns tension values (scalar), I created a new chord vector vocabulary using a classification model (binary chords as the categories and tension values as the labels) and extracting the embedding layer. Now I am currently empoying a generative model to analyze the differences in music composition using a binary chord vocabulary and my embedding chord vocabulary.
 
 #### Psychoacoustic Dissonance
+Helmholtz in the late 1800's, and later Plomp and Levelt in the mid 1900's determined that an objective measure of harmonic tension can be measured by analyzing the harmonics of two or more signals in relation to eachother. This method was codified into a dissonance function by William Sethares in the early 2000's that passes in two frequency spectrums of equal length and returns a dissonance value. 
+```
+# The dissonance function as codified by William Sethares in the early 2000's - built on the previous research conducted by Helmholtz, Plomp and Levelt.
+def dissmeasure(fvec, amp, model='min'):
+    
+    # Sort by frequency
+    sort_idx = np.argsort(fvec)
+    am_sorted = np.asarray(amp)[sort_idx]
+    fr_sorted = np.asarray(fvec)[sort_idx]
+
+    # Used to stretch dissonance curve for different freqs:
+    Dstar = 0.24  # Point of maximum dissonance
+    S1 = 0.0207
+    S2 = 18.96
+
+    C1 = 5
+    C2 = -5
+
+    # Plomp-Levelt roughness curve:
+    A1 = -3.51
+    A2 = -5.75
+
+    # Generate all combinations of frequency components
+    idx = np.transpose(np.triu_indices(len(fr_sorted), 1))
+    fr_pairs = fr_sorted[idx]
+    am_pairs = am_sorted[idx]
+
+    Fmin = fr_pairs[:, 0]
+    S = Dstar / (S1 * Fmin + S2)
+    Fdif = fr_pairs[:, 1] - fr_pairs[:, 0]
+
+    if model == 'min':
+        a = np.amin(am_pairs, axis=1)
+    elif model == 'product':
+        a = np.prod(am_pairs, axis=1)  # Older model
+    else:
+        raise ValueError('model should be "min" or "product"')
+    SFdif = S * Fdif
+    D = np.sum(a * (C1 * np.exp(A1 * SFdif) + C2 * np.exp(A2 * SFdif)))
+
+    return D
+```
 
 #### Dissonance Curve
 ![DIssonance Curve Flow Chart](https://user-images.githubusercontent.com/84595669/188961931-74bf63b5-cda7-4e01-a1f6-6694bab8d15a.png)
@@ -146,13 +188,14 @@ Music composition is a widely studied field of music. When a music composer firs
 
 #### Transformer and Music Generation
 
-
-
-### Results
+### Results and Conclusion
 Currently in Progress...
 
 ### Poster
 ![Machine Learning Composing Music Utilizing Frequency Theory pptx](https://user-images.githubusercontent.com/84595669/187098383-ebdfc6a3-73e7-4f1c-9d07-ac7b98ba280c.png)
 
 ### Citations
-
+- References: Helmholtz H. Dover Publications; New York, NY: 1877. On the sensations of tone as a physiological basis for the theory of music. 
+- Plomp, R., & Levelt, W. J. M. (1965). Tonal consonance and critical bandwidth. The journal of the Acoustical Society of America, 38(4), 548-560.
+- Sethares, W. A. (1993). Local consonance and the relationship between timbre and scale. The Journal of the Acoustical Society of America, 94(3), 1218-1228.
+- Yoo, M. J., & Lee, I. K. (2006, November). Musical Tension Curves and its Applications. In ICMC.
