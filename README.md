@@ -134,7 +134,7 @@ on a much more abstract musical framework - harmonic consonance and dissonance. 
 through this abstract musical framework, I will train a transformer model to produce new compositions with greater originality and complexity.
 
 ### Methodology
-Music composition is a widely studied field of music. When a music composer first sits down to write a piece of music, it is commonly practice to first consider the emotions you are trying to evoke from the listener. Ultimately it is the response to this question that will ultimately guide the composer throughout the entire music composition process as every decision made will enforce this. Understanding that this question is not considered but rather bypassed completely by a machine learning music composer begs the question, "How can emotion in music be quantified". For composers, one of the biggest ways of influencing the listener's emotions is by utilizing harmonic tension and resolution. 
+Music composition is a widely studied field of music. When a music composer first sits down to write a piece of music, it is commonly practice to first consider the emotions you are trying to evoke from the listener. Ultimately, it is the response to this question that will ultimately guide the composer throughout the entire music composition process as every decision made will enforce this. Understanding that this question is not considered but rather bypassed completely by a machine learning model begs the question, "How can emotion in music be quantified?". For composers, one of the biggest ways of influencing the listener's emotions is by utilizing harmonic tension and resolution. Moreover, there are objective measures of harmonic tension as developed by researchers that prove accurate. Given a function that passes any chord (or chords) adn returns tension values (scalar), I created a new chord vector vocabulary using a classification model (binary chords as the categories and tension values as the labels) and extracting the embedding layer. Now I am currently empoying a generative model to analyze the differences in music composition using a binary chord vocabulary and my embedding chord vocabulary.
 
 #### Psychoacoustic Dissonance
 
@@ -146,8 +146,6 @@ Music composition is a widely studied field of music. When a music composer firs
 
 #### Transformer and Music Generation
 
-
-#### Chord Embeddings
 
 
 ### Results
