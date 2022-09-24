@@ -1,6 +1,10 @@
 # Music-AI-Research
  
-This github repository serves as a portfolio of my independent undergraduate research conducted from May 2021 to August 2022 at NC State University. **Coding files will be uploaded pending research paper publications.** I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below... 
+##### NOTE
+Coding files will be uploaded pending research paper publications. This portfolio is also subject to change as my research continues to progress and evolve.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This github repository serves as a portfolio of my independent undergraduate research conducted from May 2021 to August 2022 at NC State University. I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below... 
 
 #### May 2021 - August 2021
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
@@ -137,7 +141,8 @@ through this abstract musical framework, I will train a transformer model to pro
 Music composition is a widely studied field of music. When a music composer first sits down to write a piece of music, it is commonly practice to first consider the emotions you are trying to evoke from the listener. Ultimately, it is the response to this question that will ultimately guide the composer throughout the entire music composition process as every decision made will enforce this. Understanding that this question is not considered but rather bypassed completely by a machine learning model begs the question, "How can emotion in music be quantified?". For composers, one of the biggest ways of influencing the listener's emotions is by utilizing harmonic tension and resolution. Moreover, there are objective measures of harmonic tension as developed by researchers that prove accurate. Given a function that passes any chord (or chords) adn returns tension values (scalar), I created a new chord vector vocabulary using a classification model (binary chords as the categories and tension values as the labels) and extracting the embedding layer. Now I am currently empoying a generative model to analyze the differences in music composition using a binary chord vocabulary and my embedding chord vocabulary.
 
 #### Psychoacoustic Dissonance
-Helmholtz in the late 1800's, and later Plomp and Levelt in the mid 1900's determined that an objective measure of harmonic tension can be measured by analyzing the harmonics of two or more signals in relation to eachother. This method was codified into a dissonance function by William Sethares in the early 2000's that passes in two frequency spectrums of equal length and returns a dissonance value. 
+Helmholtz in the late 1800's, and later Plomp and Levelt in the mid 1900's determined that an objective measure of harmonic tension can be measured by analyzing the harmonics of two or more signals in relation to eachother. This method was codified into a dissonance function by William Sethares in the early 2000's that passes in two frequency spectrums of equal length and returns a dissonance value. In summary, this theory states that there is a harmonic tension and the beat frequency between a signals harmonics are directly proportional. 
+
 ```
 # The dissonance function as codified by William Sethares in the early 2000's - built on the previous research conducted by Helmholtz, Plomp and Levelt.
 def dissmeasure(fvec, amp, model='min'):
@@ -181,12 +186,17 @@ def dissmeasure(fvec, amp, model='min'):
 ```
 
 #### Dissonance Curve
+Using the dissonance function outlined above, I created a dissonance graph for every interval between unison and an octave inclusive (graph on the left). Interestingly enough, every local minimum in the interval dissonance graph is a tone in the western chromatic scale. This point was made by William Sethares upon discovering this graph. Nevertheless, this function can be extended to 3 note (top graph) and 4 note (bottom graph) dissonance graphs. I then used these graphs to map the harmonic tension across a piece of sheet music (right graph). The training corpus I used to create tension graphs with were Bach chorales. 
+
 ![DIssonance Curve Flow Chart](https://user-images.githubusercontent.com/84595669/188961931-74bf63b5-cda7-4e01-a1f6-6694bab8d15a.png)
 
 #### Embedding
+I constructed a Multilayer Perceptron incorporating an embedding layer to predict the dissonance values of all possible binary chord vector representations. After the model overfit to the data (this is desirable because we don't want it to generalize), I extracted the embedding layer and performed some dimensionality reduction techniques to obtain the graph below. The x and y axis for this graph are purely positional and relative. Note that there are noticeable clusters of certain chords due to their similar dissonance values. 
 
+![image](https://user-images.githubusercontent.com/84595669/192071956-6e76fb32-c069-4cbc-bd5c-0c33c87e49fc.png)
 
 #### Transformer and Music Generation
+Currently in Progress...
 
 ### Results and Conclusion
 Currently in Progress...
