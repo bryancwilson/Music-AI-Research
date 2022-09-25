@@ -112,13 +112,15 @@ For the Q-Learning implementation, I utilized an E-Greedy Temporal Difference Of
 ```
 
 #### Reward Function
-It would've been infeasible to create an effective reward function based on general musci theory due to its intractible breadth. Therfore I chose to construct a reward function solely on jazz harmonic theory. 
+It would've been infeasible to create an effective reward function based on general musci theory due to its intractible breadth. Therfore I chose to construct a reward function solely on jazz harmonic theory. My reward function penalized the agent if it picked a chord whos root didn't match that of the baseline or didn't follow conventional voice leading rules. The maximum amount of points that agent could acquire over an episode is 8. 
 
 ### Results
 ![Figure_1](https://user-images.githubusercontent.com/84595669/187099460-7961f601-67f0-49a4-ad72-58478871a967.png)
 
+The loss function shows that the model is learning the best chords to select which is promising. However the music does not sound aesthetically pleasing. In analyzing the sheet music, the chords are extremely close together and show essentially no signs of variation. In addition, the roots of the chosen chord do not match with the given baseline in the environment. This most likely means there is a problem or insufficiency with the reward function, as this function essentially outlines desired outcomes. 
+
 ### Conclusions
-Unless the algorithm ran for an extremely long time, and the policy gradient descent randomly started at the right initiation, the algorithm wold never find the the optimal policy and would always produce a music composition with errors. E-greedy policy improvement is insufficient to train AI intelligence algorithms to produce original music. 
+Because music requires perfection in note choice, sub optimal results, even if they are high accuracy will not translate well into producable/useful music. The E-greedy in this current implementation works well as seen through a end value score of 0, which is the maximum score the agent can recieve. Therefore, next steps would be to ensure that the reward function is completely outlining the desired results and it results in a tractible algorithm. I speculate that revisiting and refining the reward function would also require a more complex solution to the exploration/exploitation problem as the number of optimal solution would decrease. Nevertheless, Reinforcement Learning shows promise in music generation, however optimal results requires careful construction of its reward function.
 
 ### Poster
 ![Slide1](https://user-images.githubusercontent.com/84595669/187097304-0efd3ff1-eab1-403a-8a7c-46b58623d2d0.PNG)
