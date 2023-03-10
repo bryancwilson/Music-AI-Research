@@ -4,7 +4,7 @@
 Coding files will be uploaded pending research paper publications. This portfolio is also subject to change as my research continues to progress and evolve.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-This github repository serves as a portfolio of my independent undergraduate research conducted from May 2021 to August 2022 at NC State University. I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below... 
+This github repository serves as a portfolio of my undergraduate research projects conducted from May 2021 to August 2022 at NC State University. I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below.
 
 #### May 2021 - August 2021
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
@@ -15,8 +15,7 @@ This github repository serves as a portfolio of my independent undergraduate res
 - **Dr. Thomas Price** (Professor in the Dept. of Computer Science at NC State University)
 
 
-Also, during both Summer 2021 and Summer 2022, I conducted research through the **Women and Minority Summer Research Program** headed by **Dr. Javon Adams** (Interim Director of the 
-College of Engineering Women and Minority Engineering Programs at NC State University).
+During both Summer 2021 and Summer 2022, I conducted research through the **Women and Minority Summer Research Program** headed by **Dr. Javon Adams** (Interim Director of the College of Engineering Women and Minority Engineering Programs at NC State University).
 
 ### Preface
 Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
