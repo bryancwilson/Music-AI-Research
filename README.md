@@ -10,8 +10,10 @@ This github repository serves as a portfolio of my independent undergraduate res
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
 
 #### May 2021 - Present
-- **Dr. Thomas Price** (Professor in the Dept. of Computer Science at NC State University)
+- **John Bacher** (Computer Science PhD Student at NC State University)
 - **Jimmy Skripchuck** (Computer Science PhD Student at NC State University)
+- **Dr. Thomas Price** (Professor in the Dept. of Computer Science at NC State University)
+
 
 Also, during both Summer 2021 and Summer 2022, I conducted research through the **Women and Minority Summer Research Program** headed by **Dr. Javon Adams** (Interim Director of the 
 College of Engineering Women and Minority Engineering Programs at NC State University).
