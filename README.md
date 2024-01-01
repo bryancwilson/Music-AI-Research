@@ -4,7 +4,7 @@
 Coding files will be uploaded pending research paper publications. This portfolio is also subject to change as my research continues to progress and evolve.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-This github repository serves as a portfolio of my undergraduate research projects conducted from May 2021 to August 2022 at NC State University. I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below.
+This github repository serves as a portfolio of my undergraduate research projects conducted from May 2021 to May 2023 at NC State University. I first want to give a huge thanks to the professors and graduate students at NC State University for providing mentorship, guidance, and support during my research effort. I have listed their names below.
 
 #### May 2021 - August 2021
 - **Dr. John-Paul Ore** (Professor in the Dept. of Computer Science at NC State University)
@@ -18,12 +18,9 @@ This github repository serves as a portfolio of my undergraduate research projec
 During both Summer 2021 and Summer 2022, I conducted research through the **Women and Minority Summer Research Program** headed by **Dr. Javon Adams** (Interim Director of the College of Engineering Women and Minority Engineering Programs at NC State University).
 
 ### Preface
-Though I have split these two these research projects into two main stretches, they both can be thought of as one long research project where I explored one main topic
--- **computer generated art through machine learning**. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictability throughout a piece of music that embodies a person's life. Furthermore it is the experiences of a person's life which informs the music composition process. Music composition therefore cannot be mimicked but rather must be learned. 
+Though I have split these two these research projects into two main stretches, they both are research projects in the domain of **machine learning music music generation**. As a musician, I believe music to be a carefully constructed reflection, by a composer, songwriter, filmscorer, etc., of the human experience. It is both the spontaneity and predictability throughout a piece of music that embodies a person's life. Furthermore it is the experiences of a person's life which informs the music composition process. Music composition therefore cannot be mimicked but rather must be learned. 
 
-With the recent 21st century surge in technological advancements, Machine Learning has become a widely researched and implemented tool in organization globally. Naturally within the ongoing conversation regarding the capacity of machine learning, the task of creating art has arisen. There has been success using natural language processing techniques and other generative architectures to compose music, however there is still compositional cielings such as originality and complexity we have not broken through as well as a large mistrust of AI composers from the musician population. 
-
-If quantifying the complexity of human emotions and emulating that in music is unfeasible for a computer, can we instead use machine learning and mathematical concepts to instead model the human composition process which is driven by the human experience. If not, will even a partial or incomplete model lead to much more original and complex sounding music. This ultimately is what I looked to explore in this research project.
+With the recent 21st century surge in technological advancements, Machine Learning has become a widely researched and implemented tool. Naturally, within the ongoing conversation regarding the capabilities of machine learning, the task of creating art has arisen. There has been success using natural language processing techniques and other generative architectures to compose music, however there are still compositional cielings, such as originality and complexity, that we have not broken through. In addition, arguably the thickest cieling machine learning developers in the field of computational music generation, is large mistrust of computational methods from the composer community. 
 
 ## Summer 2021
 ### Abstract
